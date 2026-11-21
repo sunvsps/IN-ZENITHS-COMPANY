@@ -133,7 +133,95 @@ h3{font-size:24px;font-weight:700}
 .work .kind{display:inline-block;margin-top:16px;font-size:13px;font-weight:600;color:var(--lime);letter-spacing:.06em;text-transform:uppercase}
 .work h3{margin-top:4px}
 .work p{margin:2px 0 0;color:var(--muted);font-size:15px}
+.work .points{margin:12px 0 0;padding:0;list-style:none;display:grid;gap:6px;color:var(--muted);font-size:14px}
+.work .points li{display:flex;gap:10px}
+.work .points li::before{content:"";width:6px;height:6px;border-radius:50%;background:var(--lime);margin-top:.6em;flex:none}
+.work .more{display:inline-block;margin-top:12px;color:var(--lime);font-weight:600;font-size:15px}
 @media (max-width:820px){.works{grid-template-columns:1fr}}
+
+/* ---------- Work mockups (วาดด้วย CSS ไม่ต้องใช้ไฟล์ภาพ) ---------- */
+.shot.mk{container-type:inline-size;border:1px solid var(--line);padding:0;overflow:hidden;position:relative;display:block}
+.mk .sc{position:absolute;inset:0;text-align:left;font-size:2.6cqw;line-height:1.3;color:#fff;font-family:var(--f-text)}
+.mk .sc *{box-sizing:border-box}
+.mk .t-num{font-family:var(--f-display);font-weight:700}
+/* Guild Manager */
+.mk-clover{background:radial-gradient(circle at 80% 10%,rgba(80,230,140,.35),transparent 45%),radial-gradient(circle at 10% 100%,rgba(88,101,242,.35),transparent 50%),linear-gradient(160deg,#0B2016,#05100B)}
+.mk-clover .win{position:absolute;left:2.6em;right:2.6em;top:2.2em;font-size:1.12em;background:#0F1519;border:1px solid rgba(255,255,255,.09);border-radius:.9em;box-shadow:0 1.4em 3em rgba(0,0,0,.55);overflow:hidden}
+.mk-clover .bar{display:flex;align-items:center;gap:.35em;padding:.55em .8em;background:#161E23;border-bottom:1px solid rgba(255,255,255,.06)}
+.mk-clover .bar i{width:.55em;height:.55em;border-radius:50%;background:#FF5F57}.mk-clover .bar i:nth-child(2){background:#FEBC2E}.mk-clover .bar i:nth-child(3){background:#28C840}
+.mk-clover .url{margin-left:.8em;flex:1;background:#0B1013;border-radius:1em;padding:.15em .8em;font-size:.72em;color:#7E8B93}
+.mk-clover .body{padding:.9em 1em}
+.mk-clover .hd{display:flex;align-items:center;justify-content:space-between}
+.mk-clover .hd b{font-family:var(--f-display);font-size:1.15em}
+.mk-clover .hd b span{color:#4ADE80}
+.mk-clover .timer{font-family:var(--f-display);font-size:.85em;background:rgba(74,222,128,.14);color:#4ADE80;border:1px solid rgba(74,222,128,.4);padding:.15em .7em;border-radius:1em}
+.mk-clover .items{display:grid;grid-template-columns:repeat(3,1fr);gap:.6em;margin-top:.8em}
+.mk-clover .it{background:#161E23;border:1px solid rgba(255,255,255,.06);border-radius:.6em;padding:.6em;display:flex;flex-direction:column;align-items:center;gap:.3em}
+.mk-clover .gem{width:2.4em;height:2.4em;border-radius:.6em;background:var(--g);box-shadow:inset 0 -.3em .6em rgba(0,0,0,.35),0 0 1em var(--gs)}
+.mk-clover .it small{font-size:.68em;color:#C9D3D9;white-space:nowrap}
+.mk-clover .it em{font-style:normal;font-size:.62em;font-weight:700;width:100%;text-align:center;padding:.3em 0;border-radius:.5em;background:#4ADE80;color:#062312}
+.mk-clover .it em.won{background:transparent;color:#4ADE80;border:1px solid rgba(74,222,128,.5)}
+.mk-clover .q{margin-top:.8em;font-size:.7em;color:#9AA6AD;display:flex;justify-content:space-between}
+.mk-clover .prog{height:.4em;border-radius:1em;background:#1F282E;margin-top:.35em;overflow:hidden}
+.mk-clover .prog i{display:block;height:100%;width:62%;background:linear-gradient(90deg,#4ADE80,#22D3EE)}
+.mk-clover .team{display:flex;align-items:center;gap:.3em;margin-top:.8em;padding-top:.7em;border-top:1px solid rgba(255,255,255,.07);font-size:.7em;color:#9AA6AD}
+.mk-clover .team span{flex:1}
+.mk-clover .team i{font-style:normal;width:2em;height:2em;border-radius:50%;background:var(--c);color:#0F1519;font-weight:700;display:grid;place-items:center;border:2px solid #0F1519;margin-left:-.6em}
+.mk-clover .team i.more{background:#1F282E;color:#C9D3D9;font-size:.85em}
+.mk-clover .toast{position:absolute;right:1.6em;bottom:1.3em;display:flex;align-items:center;gap:.6em;background:#5865F2;padding:.55em .9em;border-radius:.8em;box-shadow:0 .8em 2em rgba(40,50,180,.5);font-size:.78em;max-width:17em}
+.mk-clover .toast .av{width:1.8em;height:1.8em;border-radius:50%;background:radial-gradient(circle at 35% 35%,#86EFAC,#16A34A);flex:none;display:grid;place-items:center;font-size:.9em}
+.mk-clover .toast b{display:block;font-size:.85em;opacity:.8;font-weight:600}
+/* Student Management */
+.mk-earth{background:radial-gradient(circle at 85% 20%,rgba(255,170,90,.38),transparent 45%),radial-gradient(circle at 0% 90%,rgba(6,199,85,.25),transparent 50%),linear-gradient(160deg,#2A2117,#14100B)}
+.mk .phone2{position:absolute;top:2em;width:13.6em;height:28em;background:#FBF7F1;border:.45em solid #111;border-radius:2em;overflow:hidden;box-shadow:0 1.6em 3em rgba(0,0,0,.5);color:#2B2219}
+.mk-earth .phone2{left:4.6em}
+.mk-earth .top{background:#06C755;color:#fff;padding:1.3em .9em .7em;font-size:.72em;display:flex;justify-content:space-between;align-items:center}
+.mk-earth .top b{font-family:var(--f-display);font-size:1.3em}
+.mk-earth .pad{padding:.8em}
+.mk-earth .hi{font-size:.72em;color:#8A7A68}
+.mk-earth .ring{margin:.6em auto 0;width:8.4em;height:8.4em;border-radius:50%;background:conic-gradient(#E9823A 0 72%,#EFE5D8 72% 100%);display:grid;place-items:center}
+.mk-earth .ring div{width:6.8em;height:6.8em;border-radius:50%;background:#FBF7F1;display:grid;place-content:center;text-align:center}
+.mk-earth .ring .t-num{font-size:2em;line-height:1;color:#2B2219}
+.mk-earth .ring small{font-size:.6em;color:#8A7A68}
+.mk-earth .kid{display:flex;align-items:center;gap:.55em;background:#fff;border:1px solid #EFE5D8;border-radius:.7em;padding:.45em .55em;margin-top:.5em;font-size:.7em}
+.mk-earth .kid .av{width:2.2em;height:2.2em;border-radius:50%;background:var(--c);flex:none}
+.mk-earth .kid span{flex:1}.mk-earth .kid small{display:block;color:#8A7A68}
+.mk-earth .kid em{font-style:normal;font-weight:700;color:#06A045}
+.mk-earth .stmt{margin-top:.8em;text-align:center;font-size:.7em;font-weight:700;color:#fff;background:#2B2219;border-radius:1em;padding:.6em}
+.mk-earth .float{position:absolute;background:#fff;color:#2B2219;border-radius:.9em;padding:.7em .9em;box-shadow:0 1em 2.4em rgba(0,0,0,.45);font-size:.78em}
+.mk-earth .f1{right:2.6em;top:4.2em;width:13em}
+.mk-earth .f1 .ok{display:inline-flex;align-items:center;gap:.35em;font-weight:700;color:#06A045}
+.mk-earth .f1 .ok::before{content:"✓";display:grid;place-items:center;width:1.4em;height:1.4em;border-radius:50%;background:#06C755;color:#fff;font-size:.85em}
+.mk-earth .f1 p{margin:.35em 0 0;color:#8A7A68;font-size:.9em}
+.mk-earth .stars{color:#F5A524;letter-spacing:.1em;margin-top:.2em}
+.mk-earth .f2{right:4.2em;top:14.6em;width:12em;background:#2B2219;color:#FBF7F1;border:1px solid rgba(255,255,255,.12)}
+.mk-earth .f2 b{color:#FFB27A}
+.mk-earth .bars{display:flex;align-items:flex-end;gap:.35em;height:3.2em;margin-top:.5em}
+.mk-earth .bars i{flex:1;border-radius:.25em .25em 0 0;background:linear-gradient(#FFB27A,#E9823A);height:var(--h)}
+/* Register */
+.mk-reg{background:radial-gradient(circle at 75% 25%,rgba(230,170,140,.35),transparent 45%),linear-gradient(160deg,#3B0D1A,#14050A)}
+.mk-reg .phone2{left:3.4em;background:#1C0910;color:#F3DCCD}
+.mk-reg .rh{height:9.4em;background:radial-gradient(circle at 50% 55%,#5A1A2A,#2A0A13 70%);display:grid;place-items:center;position:relative}
+.mk-reg .brand{position:absolute;top:1.3em;left:0;right:0;text-align:center;font-family:Georgia,serif;letter-spacing:.3em;font-size:.6em;color:#E7B9A0}
+.mk-reg .watch{margin-top:1.4em;width:5.4em;height:5.4em;border-radius:50%;background:radial-gradient(circle,#2A0A13 55%,#E7B9A0 56% 62%,#9C5D4A 63% 70%,transparent 71%);position:relative}
+.mk-reg .watch::before,.mk-reg .watch::after{content:"";position:absolute;left:50%;bottom:50%;width:.16em;background:#F3DCCD;transform-origin:bottom;border-radius:1em}
+.mk-reg .watch::before{height:1.6em;transform:translateX(-50%) rotate(40deg)}
+.mk-reg .watch::after{height:2.1em;transform:translateX(-50%) rotate(-70deg)}
+.mk-reg .pad{padding:.9em}
+.mk-reg h4{margin:0;font-family:Georgia,serif;font-weight:400;font-size:1.05em;color:#F3DCCD}
+.mk-reg .sub{font-size:.62em;color:#B48A7C;margin-top:.15em}
+.mk-reg .fld{margin-top:.55em;font-size:.6em;color:#B48A7C}
+.mk-reg .fld div{margin-top:.25em;height:2.3em;border:1px solid #4A1E29;border-radius:.5em;background:#250C14;padding:.55em .7em;color:#F3DCCD;font-size:1.05em}
+.mk-reg .go{margin-top:.9em;height:2.1em;border-radius:1em;background:linear-gradient(90deg,#E7B9A0,#C9876E);color:#2A0A13;font-weight:700;font-size:.75em;display:grid;place-items:center}
+.mk-reg .ticket{position:absolute;right:2.4em;top:3.6em;width:14em;background:#FFF7F2;color:#2A0A13;border-radius:1em;padding:1em;box-shadow:0 1.2em 2.8em rgba(0,0,0,.55);transform:rotate(4deg)}
+.mk-reg .ticket .k{font-family:Georgia,serif;letter-spacing:.25em;font-size:.55em;color:#9C5D4A}
+.mk-reg .ticket b{display:block;font-size:.95em;margin-top:.2em}
+.mk-reg .ticket small{display:block;font-size:.62em;color:#7A5A50}
+.mk-reg .qr{display:grid;grid-template-columns:repeat(15,1fr);width:8.4em;aspect-ratio:1;margin:.8em auto .2em;padding:.4em;background:#fff;border-radius:.4em}
+.mk-reg .qr i{background:#2A0A13}.mk-reg .qr b{background:transparent}
+.mk-reg .ticket hr{border:0;border-top:1px dashed #D9C1B6;margin:.6em -1em}
+.mk-reg .chk{position:absolute;right:3.6em;bottom:2.4em;display:flex;align-items:center;gap:.5em;background:#14261B;border:1px solid rgba(74,222,128,.45);color:#86EFAC;padding:.5em .9em;border-radius:2em;font-size:.8em;font-weight:600;box-shadow:0 .8em 2em rgba(0,0,0,.45)}
+.mk-reg .chk::before{content:"✓";display:grid;place-items:center;width:1.4em;height:1.4em;border-radius:50%;background:#22C55E;color:#06210F;font-size:.85em}
 
 /* Why */
 .why{display:grid;grid-template-columns:1fr 1fr;gap:56px;align-items:center}
@@ -273,9 +361,88 @@ footer{border-top:1px solid var(--line);padding-block:28px;color:var(--dim);font
         </div>
       </div>
       <div class="works">
-        <div class="work"><div class="shot">วางภาพ: images/work-website.png</div><span class="kind">Website</span><h3>Corporate Website</h3><p>เว็บไซต์องค์กร ออกแบบใหม่ทั้งหมด</p></div>
-        <div class="work"><div class="shot">วางภาพ: images/work-fashion.png</div><span class="kind">Event Tech</span><h3>Fashion Event</h3><p>ระบบลงทะเบียนธีมดำ-ทอง ตามแบรนด์</p></div>
-        <div class="work"><div class="shot">วางภาพ: images/work-watch.png</div><span class="kind">Website + Event</span><h3>Watch Exhibition</h3><p>เว็บประจำงานเชื่อมกับระบบเช็กอิน</p></div>
+        <div class="work">
+          <div class="shot mk" role="img" aria-label="ตัวอย่างหน้าจอ Guild Manager: หน้าประมูลของกิลด์ และการแจ้งเตือนผ่าน Discord">
+            <div class="sc mk-clover" aria-hidden="true">
+              <div class="win">
+                <div class="bar"><i></i><i></i><i></i><span class="url">guild-manager · auction</span></div>
+                <div class="body">
+                  <div class="hd"><b>ประมูล<span>กิลด์</span></b><span class="timer">⏱ 04:32</span></div>
+                  <div class="items">
+                    <div class="it"><span class="gem" style="--g:radial-gradient(circle at 35% 30%,#FBCFE8,#EC4899);--gs:rgba(236,72,153,.45)"></span><small>Poring Pet</small><em>กดประมูล</em></div>
+                    <div class="it"><span class="gem" style="--g:radial-gradient(circle at 35% 30%,#BAE6FD,#3B82F6);--gs:rgba(59,130,246,.45)"></span><small>กล่องอัญมณี</small><em class="won">ได้แล้ว ✓</em></div>
+                    <div class="it"><span class="gem" style="--g:radial-gradient(circle at 35% 30%,#FEF08A,#EAB308);--gs:rgba(234,179,8,.45)"></span><small>Mithril Ore</small><em>กดประมูล</em></div>
+                  </div>
+                  <div class="q"><span>คิว Gear · คุณอยู่ลำดับที่ 3</span><span>5/8</span></div>
+                  <div class="prog"><i></i></div>
+                  <div class="team"><span>Castle Siege</span><i style="--c:#F472B6">K</i><i style="--c:#60A5FA">R</i><i style="--c:#FACC15">M</i><i style="--c:#A78BFA">S</i><i class="more">+12</i></div>
+                </div>
+              </div>
+              <div class="toast"><span class="av">☘</span><span><b>Guild Bot</b>ตัวสำรองเข้าทีม Polarity Zone แล้ว</span></div>
+            </div>
+          </div>
+          <span class="kind">Web App · Community</span>
+          <h3>Guild Manager</h3>
+          <p>เว็บจัดการกิลด์เกม Ragnarok: The New World ล็อกอินด้วย Discord มีผู้ใช้งานจริงหลักร้อยคน</p>
+          <ul class="points">
+            <li>ประมูลของกิลด์ ทั้งแบบกดแข่งและแบบเข้าคิว</li>
+            <li>ลงชื่อกิจกรรมรายสัปดาห์ ตัวสำรองเลื่อนขึ้นอัตโนมัติ</li>
+            <li>จัดทีมต่อกิจกรรม แจ้งเตือนผ่านบอท Discord</li>
+          </ul>
+        </div>
+        <div class="work">
+          <div class="shot mk" role="img" aria-label="ตัวอย่างหน้าจอ Student Management: ชั่วโมงเรียนคงเหลือของครอบครัวใน LINE และการเช็กอินของครู">
+            <div class="sc mk-earth" aria-hidden="true">
+              <div class="phone2">
+                <div class="top"><b>Student</b><span>LINE</span></div>
+                <div class="pad">
+                  <div class="hi">สวัสดีค่ะ คุณแม่น้องภู</div>
+                  <div class="ring"><div><span class="t-num">18.5</span><small>ชม. คงเหลือ</small></div></div>
+                  <div class="kid"><span class="av" style="--c:linear-gradient(135deg,#FFB27A,#E9823A)"></span><span>น้องภู<small>OT · พฤ. 16:00</small></span><em>−1 ชม.</em></div>
+                  <div class="kid"><span class="av" style="--c:linear-gradient(135deg,#86EFAC,#06C755)"></span><span>น้องพิม<small>Speech · ส. 10:00</small></span><em>−1 ชม.</em></div>
+                  <div class="stmt">ประวัติเติม / ใช้ชั่วโมง →</div>
+                </div>
+              </div>
+              <div class="float f1"><span class="ok">เช็กอินแล้ว</span><p>น้องภู · คาบ OT 16:00</p><div class="stars">★★★★☆</div></div>
+              <div class="float f2"><b>พัฒนาการรายไตรมาส</b><div class="bars"><i style="--h:40%"></i><i style="--h:55%"></i><i style="--h:70%"></i><i style="--h:88%"></i></div></div>
+            </div>
+          </div>
+          <span class="kind">Web App · Education</span>
+          <h3>Student Management</h3>
+          <p>ระบบจัดการคอร์สและชั่วโมงเรียน สำหรับโรงเรียนและติวเตอร์</p>
+          <ul class="points">
+            <li>ผู้ปกครองดูชั่วโมงคงเหลือและพัฒนาการลูกผ่าน LINE</li>
+            <li>ครูเช็กอินและให้คะแนนพฤติกรรมได้จากมือถือ</li>
+            <li>แอดมินเติมชั่วโมง ดูยอดค้างชำระและแจ้งเตือนรวม</li>
+          </ul>
+        </div>
+        <div class="work">
+          <div class="shot mk" role="img" aria-label="ตัวอย่างหน้าจอ Event Registration Platform: หน้าลงทะเบียนธีมแบรนด์ และบัตร QR สำหรับเช็กอิน">
+            <div class="sc mk-reg" aria-hidden="true">
+              <div class="phone2">
+                <div class="rh"><span class="brand">CHRONOS PRESTIGE</span><span class="watch"></span></div>
+                <div class="pad">
+                  <h4>Watch Exhibition 2026</h4>
+                  <div class="sub">ลงทะเบียนล่วงหน้า · Register</div>
+                  <div class="fld">ชื่อ-นามสกุล<div>Pimchanok S.</div></div>
+                  <div class="fld">อีเมล<div>pim@email.com</div></div>
+                  <div class="go">ลงทะเบียน</div>
+                </div>
+              </div>
+              <div class="ticket"><span class="k">E-TICKET</span><b>Pimchanok S.</b><small>Watch Exhibition · 12 ธ.ค.</small><div class="qr"><i></i><i></i><i></i><i></i><i></i><i></i><i></i><b></b><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><b></b><b></b><b></b><b></b><b></b><i></i><b></b><i></i><b></b><b></b><b></b><b></b><b></b><i></i><i></i><b></b><i></i><i></i><i></i><b></b><i></i><b></b><i></i><b></b><i></i><i></i><i></i><b></b><i></i><i></i><b></b><i></i><i></i><i></i><b></b><i></i><b></b><i></i><b></b><i></i><i></i><i></i><b></b><i></i><i></i><b></b><i></i><i></i><i></i><b></b><i></i><b></b><i></i><b></b><i></i><i></i><i></i><b></b><i></i><i></i><b></b><b></b><b></b><b></b><b></b><i></i><b></b><i></i><b></b><b></b><b></b><b></b><b></b><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><b></b><i></i><i></i><i></i><i></i><i></i><i></i><i></i><b></b><b></b><b></b><b></b><b></b><b></b><b></b><b></b><b></b><b></b><b></b><b></b><b></b><b></b><b></b><i></i><i></i><i></i><i></i><i></i><i></i><i></i><b></b><i></i><i></i><b></b><i></i><b></b><i></i><i></i><i></i><b></b><b></b><b></b><b></b><b></b><i></i><b></b><b></b><i></i><i></i><i></i><i></i><i></i><b></b><i></i><b></b><i></i><i></i><i></i><b></b><i></i><b></b><i></i><i></i><b></b><b></b><b></b><i></i><b></b><i></i><b></b><i></i><i></i><i></i><b></b><i></i><b></b><i></i><b></b><i></i><i></i><i></i><i></i><b></b><i></i><b></b><i></i><i></i><i></i><b></b><i></i><b></b><i></i><b></b><b></b><i></i><b></b><i></i><i></i><i></i><b></b><b></b><b></b><b></b><b></b><i></i><b></b><i></i><b></b><i></i><i></i><b></b><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><b></b><b></b><b></b><i></i><b></b><b></b><b></b><b></b></div><hr><small>แสดง QR นี้ที่จุดเช็กอิน</small></div>
+              <div class="chk">Checked-in · 09:42</div>
+            </div>
+          </div>
+          <span class="kind">Event Tech</span>
+          <h3>Event Registration Platform</h3>
+          <p>ระบบลงทะเบียนและเช็กอินงานอีเวนต์ ปรับธีมได้ตามแบรนด์ลูกค้า</p>
+          <ul class="points">
+            <li>หน้าลงทะเบียนออกแบบตามแบรนด์ รองรับ 2 ภาษา</li>
+            <li>แอป Staff สแกน QR เช็กอินหน้างาน</li>
+            <li>หลังบ้านดูรายชื่อ ตั้งฟอร์มและอีเมลยืนยันได้เอง</li>
+          </ul>
+          <a class="more" href="events.html">ดูรายละเอียดระบบ →</a>
+        </div>
       </div>
     </div>
   </section>
