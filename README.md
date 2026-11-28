@@ -13,4 +13,4 @@
 
 ช่องทางติดต่อ: โทร 095-915-9875 · LINE OA `@IN_ZENITHS` (https://lin.ee/PHwOjOQ) · อีเมล sales@inzeniths.com
 
-ลิงก์ Santa Box ชี้ไปที่ `https://play.inzeniths.com/santa-box/` (repo `InZeniths_Interactive_lab`)
+ลิงก์ Santa Box ชี้ไปที่ `https://inzeniths.com/santa` โดย `functions/santa/` ส่งต่อทุกหน้าใต้ `/santa` ไปที่ `play.inzeniths.com` (repo `InZeniths_Interactive_lab`) Cloudflare Pages ต้อง deploy จาก Git หรือ `npx wrangler pages deploy .` (การลากไฟล์อัปโหลดในหน้าเว็บไม่รัน Functions)
